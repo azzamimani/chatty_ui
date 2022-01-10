@@ -61,6 +61,7 @@ flutter:
   assets:
     - assets/images/add_btn.png
     - assets/images/call_btn.png
+    - assets/images/send_btn.png
     - assets/images/friend1.png
     - assets/images/friend2.png
     - assets/images/friend3.png
@@ -68,6 +69,8 @@ flutter:
     - assets/images/group2.png
     - assets/images/group3.png
     - assets/images/profile.png
+    - assets/images/sabrina.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -87,7 +90,7 @@ flutter:
         weight: 400
       - asset: assets/fonts/Poppins-Light.ttf
         weight: 300
-      - asset: assets/fontsPoppins-Medium.ttf
+      - asset: assets/fonts/Poppins-Medium.ttf
         weight: 500
   #         style: italic
   #   - family: Trajan Pro

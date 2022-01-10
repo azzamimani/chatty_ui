@@ -24,9 +24,9 @@ class ChatTile extends StatelessWidget {
         padding: const EdgeInsets.only(top: 16),
         child: Row(
           children: [
-            Image.asset(imageUrl),
+            Image.asset(imageUrl, width: 55, height: 55),
             SizedBox(
-              height: 12,
+              width: 12,
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,

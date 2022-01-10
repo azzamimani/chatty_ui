@@ -1,3 +1,4 @@
+import 'package:chatty_ui/pages/chatpage.dart';
 import 'package:chatty_ui/theme.dart';
 import 'package:chatty_ui/widgets/chat_tile.dart';
 import 'package:flutter/material.dart';
@@ -82,12 +83,19 @@ class HomePage extends StatelessWidget {
                     SizedBox(
                       height: 16,
                     ),
-                    ChatTile(
-                      imageUrl: "assets/images/group1.png",
-                      name: "Jakarta Fair",
-                      text: "Why does everyone ca...",
-                      time: "11:11",
-                      unread: false,
+                    InkWell(
+                      splashColor: blueColor,
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => ChatPage()));
+                      },
+                      child: ChatTile(
+                        imageUrl: "assets/images/group1.png",
+                        name: "Jakarta Fair",
+                        text: "Why does everyone ca...",
+                        time: "11:11",
+                        unread: false,
+                      ),
                     ),
                     SizedBox(
                       height: 16,
